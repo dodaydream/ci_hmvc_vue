@@ -1,21 +1,7 @@
 <template>
   <div class="hello">
     <h2>{{ msg }}</h2>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-            
-              <div class="alert alert-success">
-                <span class="label label-info">H</span>
-                <span class="label label-success">E</span>
-                With <b>Bootstrap 3</b> CSS Plugin
-                <span class="label label-warning">L</span>
-                <span class="label label-danger">O</span>
-              </div>
-            
-        </div>
-      </div>  
-    </div>
+	<h2>{{ msgV }}</h2>
     <h3>Essential Links</h3>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -40,7 +26,12 @@
 <script>
 export default {
   name: 'HelloWorld',
-  props: ['msg']
+  props: ['msg'],
+  data() {
+	return {
+	  msgV: 'This message comes from vue'
+	}
+  }
 }
 </script>
 
