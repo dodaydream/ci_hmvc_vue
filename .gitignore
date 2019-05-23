@@ -1,8 +1,11 @@
 .DS_Store
 public/templates/
 node_modules/
+vendor/
 npm-debug.log
 yarn-error.log
+# run simple php server
+php.ini
 
 # Editor directories and files
 .idea
