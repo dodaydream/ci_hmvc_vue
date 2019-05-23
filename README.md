@@ -46,9 +46,6 @@ error unable install node-sass permission denied
 # from shell command prompt type in your project directory
 npm install --unsafe-perm -g node-sass
 
-
 ```
-
-
-
-For detailed explanation on how things work, consult maizier.b@gmail.com.
+- Session_path not valid: edit config.php
+- Page is empty: check base url

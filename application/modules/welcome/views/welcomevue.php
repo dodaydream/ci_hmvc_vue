@@ -16,8 +16,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   </head>
 
   <body>
-    <div id="app"></div>
-
+	<div id="app">
+		<hello-world msg="<?php echo 'This message comes from vue' ?>"></hello-world>
+	</div>
     
     <script src="<?php echo site_url() ?>src/dist/build.js"></script>
     

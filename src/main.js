@@ -3,7 +3,6 @@
 // commit tes
 import Vue from 'vue'
 import App from './App'
-import router from './router'
 import 'expose-loader?$!expose-loader?window.jQuery!expose-loader?jQuery!jquery'
 import 'bootstrap'
 //import BootstrapVue from 'bootstrap-vue'   
@@ -15,13 +14,13 @@ require('./../node_modules/bootstrap/dist/css/bootstrap.css')
 require('./../node_modules/font-awesome-scss/css/font-awesome.min.scss')
 
 //Vue.use(BootstrapVue);
+// Register components
+Vue.component('hello-world', require('./components/HelloWorld.vue').default)
 
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
-  template: '<App/>',
   components: { App }
 })
